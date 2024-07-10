@@ -1,0 +1,13 @@
+
+<!-- productoslist.component.html -->
+
+<form #formulario="ngForm" (ngSubmit)="agregarProducto(formulario)">
+    <input type="text" name="nombre" [(ngModel)]="nuevoProducto.nombre" required>
+    <input type="text" name="descripcion" [(ngModel)]="nuevoProducto.descripcion" required>
+    <input type="number" name="precio" [(ngModel)]="nuevoProducto.precio" required>
+    <input type="number" name="stock" [(ngModel)]="nuevoProducto.stock" required>
+  
+    <button type="submit">Agregar Producto</button>
+  </form>
+  
+<p>carritolist works!</p>
